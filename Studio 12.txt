@@ -1,0 +1,34 @@
+﻿1. Patrick Gardner, Nathan Jarvis, Noah Saffer
+2. 
+	[ 2904.966734 ] Hello from thread k_memory. Nr_structs = 2000
+    [ 2904.966750 ] Page_size: 4096, datatype_t size: 32, datatype_t/page: 128
+
+3. My_get_order shifts nr_pages right until it equals 0. For any unsigned binary number x, the next largest power of two has its only 1 one bit left of the leading one of x (e.g. 0010 0111 is of order 0100 0000).
+1000: Structs/page: 128, nr_pages: 7, order: 3
+2000: Structs/page: 128, nr_pages: 15, order: 4
+4000: Structs/page: 128, nr_pages: 31, order: 5
+
+4. [  145.621220] Loaded kernel_memory module
+[  145.625556] Hello from thread k_memory. nr_structs=200
+[  145.625577] Page_size: 4096, Datatype_t size: 32, datatype_t/page: 128
+[  145.625588] Structs/page: 128, nr_pages: 1, order: 0
+[  145.625601] curr page addr: ba7459c8
+[  145.625608] 0
+[  148.468470] Unloaded kernel_memory module
+
+
+5. [ 1345.521773] Loaded kernel_memory module
+[ 1345.526132] Hello from thread k_memory. nr_structs=1000
+[ 1345.526164] Page_size: 4096, Datatype_t size: 32, datatype_t/page: 128
+[ 1345.526176] Structs/page: 128, nr_pages: 7, order: 3
+[ 1349.595457] Successful unload!
+[ 1358.113827] Loaded kernel_memory module
+[ 1358.116682] Hello from thread k_memory. nr_structs=10000
+[ 1358.116702] Page_size: 4096, Datatype_t size: 32, datatype_t/page: 128
+[ 1358.116713] Structs/page: 128, nr_pages: 78, order: 7
+[ 1360.139355] Successful unload!
+[ 1367.289916] Loaded kernel_memory module
+[ 1367.295806] Hello from thread k_memory. nr_structs=50000
+[ 1367.295829] Page_size: 4096, Datatype_t size: 32, datatype_t/page: 128
+[ 1367.295841] Structs/page: 128, nr_pages: 390, order: 9
+[ 1368.950526] Successful unload!
